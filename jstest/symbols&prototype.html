@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbols</title>
+</head>
+<body>
+    <script>
+// let val = Symbol('hello') 
+// let val1 = Symbol('hello') 
+// console.log(val===val1)
+
+// const x= Symbol('x')
+// let Person ={
+//     name: 'jack',
+//     [x]:  21
+// };
+
+// console.log(Person)
+let gender = Symbol(" ")
+let gen= Symbol(" ")
+let user ={
+    name : "sara",
+    age : 21,
+   [gender]:"male",
+   [gen]: "male"
+}
+console.log(user[gender]===user[gen])
+
+let a = Symbol("age")
+let b = Symbol("age")
+console.log(a===b)
+
+
+
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+Person.prototype.id=1
+Person.prototype.jd=1
+console.log(Person.prototype.id===Person.prototype.id)
+const myFather = new Person("John", "Doe", 50, "blue");
+console.log(myFather.id)
+
+// Person id = Symbol("id")
+
+
+    </script>
+</body>
+</html>

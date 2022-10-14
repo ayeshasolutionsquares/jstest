@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+  <p id="demo">
+hello Everyone! Today, I am going to talk about a girl named Sulu. Sulu is a muslim hailing from the southern regions of India. Sulu finished her schooling in DCHS,Ryan,Boaz respectively. Sulu is willing to make efforts in growing her career and is a strong individual with aspiration</p>
+
+<p id="name">Ayesha Saiyed is a hardworking girl</p>
+</body>
+  
+
+    <script>
+// //using array literal
+// let arr = ["s","a","b","c"]
+// console.log(arr)
+// //push
+// arr.push("new") //adds element to the end
+// console.log(arr)
+// arr.unshift("hello") // adds element at the beginning
+// console.log(arr)
+// arr.pop()
+// console.log(arr)
+// arr.shift()
+// console.log(arr)
+// //using new keyword
+// let arr2 = new Array("g","h","i")
+// console.log(arr2[0])
+// //store value by passsing a named key
+// arr.name= "hello"
+// console.log(arr.name)
+
+// //values in array are referenced
+
+//   let arr1=[3,1,4,2,5]
+//   arr1.sort()
+//   let arr3 = arr1
+//   console.log(arr1)
+//   arr3.pop()
+//   console.log(arr1)
+//   console.log(arr3)
+//   console.log(arr1.concat(arr3))
+
+//multi-dimensional arrays
+// const data = [
+// ['sara',23,'female']
+// ,['zara',25,'female']]
+
+// console.log(data[1][1])
+
+// let studentsData = [['Jack', 24,'male'], ['Sara', 23,'female'],];
+// studentsData.push(['freeda', 23,'female']);
+// console.log(studentsData); // [["Jack", 24], ["Sara", 23, "hello"]]
+// studentsData.splice(1,0,['Hari',24,'male'])
+// console.log(studentsData)
+// studentsData[1].shift()
+
+// studentsData[1].unshift('Hari',24,'male')
+// studentsData.splice(1,1)
+// console.log(studentsData)
+// for (let i of studentsData)
+// {
+//   for(let j of i)
+//   {
+//     console.log(j)
+//   }
+// }
+
+
+//iteration in multidimensional arrays
+
+let students = [['harish',21,'male'],['harshi',30,'female']]
+// students.forEach((i)=>{
+//   i.forEach((j)=>{
+//   console.log(j)
+//   })
+// })
+
+// for (let i of students)
+//   for (let j of i)
+//   { console.log(j)
+//   }
+
+  for (let i=0; i<students.length; i++)
+  {
+    let innerArrayLength=students[i].length
+    for( let j=0;j<innerArrayLength; j++)
+    console.log(students[i][j])
+  }
+  const b= String('hello')
+  console.log(typeof(b))
+
+
+  const text1 = "hello"
+  const text2 = "world"
+  const text3 = "bonjour"
+  
+  const result1=text1.concat(' '+text2)
+  console.log(result1)
+  console.log(text1.charAt(1))
+
+
+
+let str=document.getElementById("demo").innerHTML
+let res=str.replace(/Sulu/g, "Ayesha")
+console.log(res)
+let abc= document.getElementById("name").innerHTML
+let spl= abc.split("a",6)
+console.log(spl)
+
+let text= "Hello ! my name is Ayesha"
+const myArray= text.split(" ",6)
+document.write(myArray)
+document.write("<br\>")
+document.write(myArray[1])
+  </script>
+
+</body>
+</html>

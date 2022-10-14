@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+class Customer{
+    constructor(id,name,age){
+        this.id=id;
+        this.name=name;
+        this.age=age;
+    }
+  get customerName(){
+    return this.name;
+  }
+    set customerName(x) {
+        this.name=x;
+    }
+    name(){
+let arrf=['freeda', 'shreesha']
+console.log(arrf)
+    
+  }}
+
+let cust1= new Customer(1,'Ayesha',21)
+let cust2= new Customer(2,'Saiyed',21)
+cust2.customerName='newSaiyed';
+console.log(cust2)
+console.log(cust1)
+
+cust2.name()
+
+
+//////////////////////////////////////////////
+class TestClass {
+    constructor(myName) {
+        this.name = myName;
+    }
+    getName() {
+        return this.name;
+    }
+}
+TestClass.getName2 = function() {
+    //won't actually print the name variable set since not associated with an instance of the class?
+    console.log(this.name);
+};
+var test = new TestClass("Joe");
+console.log(test.getName());
+
+    </script>
+</body>
+</html>

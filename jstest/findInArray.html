@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find()</title>
+</head>
+<body>
+   
+<p><input type=number id="ageToCheck">
+<button onclick="myFunction()">click me</button></p>
+ <p id="demo"></p>
+
+ <script>
+const ages = [4,12,16,20]
+ function checkAge(ele)
+ {
+   return ele > document.getElementById("ageToCheck").value
+ }
+
+ function myFunction()
+{
+document.getElementById("demo").innerHTML = ages.find(checkAge)
+}
+
+
+
+
+    </script>
+
+<!-- <script>
+arr=[1,2,3,4,5,67,8]
+let val=arr.find(function(ele){return ele>10})
+console.log(val)
+
+</script> -->
+</body>
+</html>

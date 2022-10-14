@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception</title>
+</head>
+<body>
+    <script>
+// try {
+// let a=100/'b'
+// throw TypeError("error")
+// } 
+// catch(e) {
+//     console.log("error encountered")
+//     console.error(`${e.name} : ${e.message}`)
+// } 
+
+// finally {
+// console.log("this message is executed anyway")
+// }
+//////////////////////////////////////////////////
+
+// try {
+//   console.log("hello")
+// } 
+// catch (e) {
+//   console.error(`${e.name}: ${e.message}`); //error object (Error()) has two properties - name and message
+// }
+/////////////////////////////////////////////////
+// const a = 100
+// const b = prompt("enter b value:")
+//    try {
+//     if(b==0)
+//     throw Error("this is a division by 0 error")
+//     else 
+//     console.log(a/b)
+//    } 
+//    catch(e){
+//     console.error(`${e.name}: ${e.message}`)
+//    }
+//    finally{
+//     console.log("this message executes anyway")
+//    }
+   //////////////////////////////////////////////////
+//    try {
+//     function greet() {
+//       console.log("hello world")}
+//      let id= setTimeout(greet, 3000)
+
+//     throw new Error("this is an error")
+//     }
+
+// catch (e) {
+// console.error("error"+e)
+// }
+// const number = 45;
+
+ //////////////////////////////
+ function myFunction() {
+    const j = 70;
+    try {
+        allert("The value of j is : " + j);
+    } catch (error) {
+        alert("Error: " +error.message);
+    }
+}
+ myFunction()
+
+ </script>
+</body>
+</html>

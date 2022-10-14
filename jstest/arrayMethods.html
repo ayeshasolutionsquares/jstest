@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+
+
+
+    <!-- <script>    
+   
+    let arr1=['eat', 'sleep', 'repeat']//array literal
+    let arr2=new Array(1,2,3,4,5,6)
+    let array = [1,2,3,4,5,6]
+
+    //Array is a constructor function whose object is being created by using the "new" keyword
+     console.log(arr2)
+    console.log(arr1.length)
+
+     // deleting elements of an array
+let arr3=arr1.slice(2)
+console.log(arr3)
+//creating a subarray from an array
+arr4=arr2.slice(1,4)
+console.log(arr4)
+arr5=arr2.slice(-4, -1)//select elements from the end of the array
+console.log(arr5)
+
+    //Adding to an array
+    arr1.unshift('slay')
+    console.log(arr1)
+    arr1.push('hello')
+    console.log(arr1)
+    //deleting an element from an array
+    arr1.shift()
+    console.log(arr1)
+    arr1.pop()
+    console.log(arr1)
+   
+    //concatenating arrays
+    arrr=arr1.concat(arr2)
+console.log(arrr)
+
+//indexOf()
+console.log(arr1.indexOf('eat'))
+
+//////////////////////////////////////////////
+
+array=[7,5,2,8,1,9,3,4,6]
+//findIndex()
+value=array.findIndex(function(ele,){
+    return (ele==5)
+})
+console.log(value)
+//sort()
+console.log('Sorted Array : '+array.sort())
+
+//forEach()
+let arrey=['eat','sleep','repeat']
+let copy= []
+arrey.forEach(function(ele){
+    copy.push(ele)
+})
+console.log(copy)
+
+//includes()
+
+console.log(arrey.includes('eat'))
+console.log(array.includes('10'))
+
+// code practice
+let abc= [3,6,5,4,7,8,9]
+function ele(element)
+{
+    return element==7
+}
+
+let def = abc.findIndex(ele)//function call//
+console.log(def)
+
+abc.splice(1,2,'new','pos') //delete or add an element in an array
+console.log(abc)
+ghi=abc.slice(1,3) 
+console.log(abc)//create a subarray
+abc.delete
+
+console.log(abc)
+console.log(ghi)
+abc.sort()
+console.log(abc)
+
+//forEach()
+
+let qrs=[2,3,4,5,6,7,8]
+copy=[]
+
+qrs.forEach(elee)
+function elee(elem)
+{
+    copy.push(elem*elem)
+}
+console.log(copy)
+function e(eleme)
+{
+    return eleme%2==1
+}
+ind=qrs.findIndex(e)
+console.log(ind) -->
+<script>
+    let ex=[100,10,20,30]
+let ans=ex.reduce(myFunc)
+myFunc(total, num)
+{
+return total - num;
+}
+console.log(ans)
+/////////////////////////////////////////
+const ages = [32, 33, 18, 40];
+function checkage(x){
+    return x>32
+}
+console.log(ages.some(checkage))
+console.log(ages.toString())
+
+///////////////////////////////////////
+arr1=['hello', 'Ayesha', 21,'welcome',true]
+sent=(arr1.join())
+console.log(sent)
+//////////////////////////////////////
+console.log(arr1.indexOf('welcome'))
+/////////////////////////////////////
+
+function agesFilter(y)
+{
+    return y>=33
+}
+console.log(ages.filter(agesFilter))
+
+///////////////////////////////////////////
+//test
+
+
+// var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// fruits.prototype.myUcase = function() {
+//   for (let i = 0; i < this.length; i++) {
+//     this[i] = this[i].toUpperCase();
+//   }
+// };
+// fruits.myUcase();
+// console.log(fruits)
+/////////////////////////////////////////////
+array=[6,4,2,8,1]
+console.log(array.sort())
+console.log(array.reverse())
+////////////////////////////////////////////
+let word='helloooo'
+arr={...word}
+console.log(arr)
+/////////////////////////////////////////////
+ar=['hello','world']
+z=ar.join()
+console.log(ar)
+console.log(z)
+console.log(z.split(','))
+console.log({...ar})
+////////////////////////////////////////
+let string="hello this is ayesha saiyed"
+let fi=string.lastIndexOf('sai')
+console.log(fi)
+/////////////////////////////////
+
+</script>
+
+</body>
+</html>

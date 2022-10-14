@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object literal vs function</title>
+  </head>
+  <body>
+    <script>
+      //object literal vs constructor function
+
+      //OBJECT LITERAL
+      let person = {
+        name: "Zarina",
+        age: 30,
+        gender: "female",
+      };
+      console.log(person.name);
+      console.log(person.age);
+      console.log(person.gender);
+
+      let human = {
+        name: "sharon",
+      };
+
+      let human1 = human;
+      human1.name = "kehkshan";
+      console.log(human.name);
+
+      //CONSTRUCTOR FUNCTION
+
+      function Student(student_name, student_age, student_gender) {
+        this.name = student_name;
+        this.age = student_age;
+        this.gender = student_gender;
+      }
+
+      const student1 = new Student("ayesha", 21, "female");
+      const student2 = new Student("saif", 28, "male");
+      const student3 = new Student("sheela", 23, "female");
+
+      student1.father = "aslam";
+
+      Student.prototype.occupation = "businessman";
+
+      console.log(student1.occupation);
+      console.log(student2.occupation);
+      console.log(student1.name);
+      console.log(student1.age);
+      console.log(student1.gender);
+      console.log(student1.father);
+
+      //built-in costructors
+      // let a= new Object;
+      let b = new String();
+      let c = new Number();
+      var d = 3;
+      var d = 10;
+      console.log(d);
+
+      function greet(d) {
+        console.log(d);
+      }
+
+      greet(d);
+
+      // greet=function(){console.log('hello')}
+      // greet()
+
+      function recur(a) {
+        console.log(a);
+        b = a - 1;
+        if (b > 0) 
+        recur(b);
+      }
+      recur(10);
+
+      // factorial
+
+    //   function fact(j)
+    //   {  if (j===0)
+    //       return 1
+    //     else if (j > 0)
+    //       return j * fact(j - 1)
+    //   }
+      
+    //  const n = 7 
+    //     let result = fact(n);
+    //     console.log(result);
+
+    function fact(f)
+{
+  if (f===0)
+  return 1
+
+else 
+return (f*fact(f-1))
+
+}
+let h=5
+let r=fact(h)
+console.log(r)
+
+// hoisting
+
+function func()
+{  p=100
+  console.log(p)
+ 
+}
+func()
+console.log(p)
+
+let fun = function(){console.log('a')};
+fun();
+
+console.log("ayesha"-"saiyed")
+</script>
+  </body>
+
+assignment : =, +=,-=,*=,/=,%=
+arithmetic: -,+,/,%,++,--,**
+comparision: ==,>,<,>=,<=,===,!==(strict not equal to),!=
+conditional: :? 
+logical: &&, ||, !// work on boolean expresssions returning boolean numbers
+bitwise: &,|,~,^,>>, <<, >>> //work on binary digits of integer values
+</html>
